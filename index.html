@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111827"><meta name="description" content="Infinity Study — your Class 10 CBSE learning command centre">
+<title>Infinity Study — Ascend</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark">∞</div><div><b>INFINITY</b><span>STUDY / ASCEND</span></div></div>
+    <div class="profile-mini"><div class="avatar">S</div><div><strong id="sideName">Learner</strong><small>CLASS 10 · CBSE</small></div><button class="icon-btn" id="profileBtn" title="Edit profile">⚙</button></div>
+    <nav class="nav">
+      <p class="nav-label">YOUR SPACE</p>
+      <button class="nav-item active" data-view="dashboard"><span>◈</span> Mission Control</button>
+      <button class="nav-item" data-view="vault"><span>▤</span> Study Vault</button>
+      <button class="nav-item" data-view="practice"><span>⌁</span> Practice Arena</button>
+      <button class="nav-item" data-view="tutor"><span>✳</span> AI Study Coach <em class="live-dot"></em></button>
+      <button class="nav-item" data-view="planner"><span>▦</span> Study Planner</button>
+      <button class="nav-item" data-view="mistakes"><span>↺</span> Mistake Lab</button>
+      <button class="nav-item" data-view="progress"><span>◷</span> Progress Analytics</button>
+      <p class="nav-label">SYSTEM</p>
+      <button class="nav-item" data-view="settings"><span>⚙</span> Profile & Settings</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="streak"><span>🔥</span><div><b id="streakNum">0 day streak</b><small>Small steps. Big comeback.</small></div></div><small class="muted">Build 10B · Learning MVP</small></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button id="menuBtn" class="icon-btn mobile-only">☰</button><div class="crumb">INFINITY / <b id="crumb">MISSION CONTROL</b></div><div class="top-actions"><span class="status-pill"><i></i><span id="syncStatus">Local progress on</span></span><button class="primary-btn small" id="quickStudy">＋ Quick study</button></div></header>
+    <div id="viewRoot" class="view-root"></div>
+    <footer>INFINITY STUDY <span>·</span> Built for learning, not shortcuts. <span id="footerStatus">Your progress stays on this device until server sync is configured.</span></footer>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<dialog id="profileDialog" class="modal"><form method="dialog" id="profileForm"><div class="modal-head"><div><small>PERSONALISE YOUR SPACE</small><h2>Your learning profile</h2></div><button class="icon-btn" value="cancel">✕</button></div><label>Your name<input id="nameInput" maxlength="50" placeholder="Learner"></label><label>Target score <select id="targetInput"><option>75</option><option>80</option><option>85</option><option selected>90</option><option>95</option><option>100</option></select></label><button class="primary-btn" value="save" id="saveProfile">Save profile</button></form></dialog>
+<script src="/app.js"></script>
+</body></html>
